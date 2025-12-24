@@ -1,32 +1,31 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
-    
 
-/* Navbar Style -  Video */
+/* Navbar Style */
 .ferrari-navbar {
     background-color: transparent;
     height: 80px;
     display: flex;
     align-items: center;
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    
 }
 
 .nav-container {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
-    padding:70px;
 }
 
 .nav-links {
@@ -35,34 +34,34 @@
 }
 
 .nav-links li {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 800;
     letter-spacing: 1.5px;
     transition: color 0.3s ease;
-    padding: 30px;
+    padding: 10px 20px;
 }
 
 .nav-links li a:hover {
-    color: #ff2800; 
+    color: #ff2800;
 }
 
 .img-1 {
-    height: 45px; 
+    height: 45px;
     filter: brightness(0) invert(1);
-    
+    margin-right: 40px;
 }
 
-/* Full Screen Video Section */
+/* Hero Video Section */
 .video-section {
     position: relative;
     width: 100%;
-    height: 100vh; /* Screen-er soman lomba */
+    height: 100vh;
     overflow: hidden;
     background-color: #000;
 }
@@ -70,10 +69,10 @@
 .bg-video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Video jeno stretch na hoye pura jaiga jure thake */
+    object-fit: cover;
 }
 
-/* Banner Section */
+/* Banner Content Section */
 .ferrari-banner {
     display: flex;
     flex-direction: column;
@@ -172,7 +171,7 @@
 
 .dot.active {
     background-color: transparent;
-    border: 2px solid #ff2800; 
+    border: 2px solid #ff2800;
     width: 12px;
     height: 12px;
 }
@@ -196,4 +195,57 @@
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+/* Grid Banner Images */
+.banner-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-1, .banner-2 {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 2.5s ease;
+}
+
+.banner-1:hover img, .banner-2:hover img {
+    transform: scale(2.05);
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    z-index: 2;
+}
+
+.banner-text h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.banner-text h2 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.banner-text i {
+    font-size: 12px;
+    margin-left: 5px;
 }
