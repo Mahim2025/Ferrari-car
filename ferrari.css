@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+/* Navbar Style -  Video */
+.ferrari-navbar {
+    background-color: transparent;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+.nav-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding:70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+    padding: 30px;
+}
+
+.nav-links li a:hover {
+    color: #ff2800; 
+}
+
+.img-1 {
+    height: 45px; 
+    filter: brightness(0) invert(1);
+    
+}
+
+/* Full Screen Video Section */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Screen-er soman lomba */
+    overflow: hidden;
+    background-color: #000;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Video jeno stretch na hoye pura jaiga jure thake */
+}
+
+/* Banner Section */
+.ferrari-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.banner-container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 50px;
+}
+
+.content-side {
+    flex: 1;
+}
+
+.headline {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.arrow {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.read-more:hover .arrow {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.image-side {
+    flex: 1;
+}
+
+.image-side img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Slider Controls */
+.slider-controls {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: transparent;
+    border: 2px solid #ff2800; 
+    width: 12px;
+    height: 12px;
+}
+
+.view-all {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.view-all hr {
+    width: 60px;
+    border: 0;
+    border-top: 1px solid #000;
+}
+
+.view-all a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
